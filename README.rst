@@ -11,6 +11,8 @@ Installation
 How to use it
 ===========
 
+Example of usage::
+
 	.. sagecellserver::
 
 	    sage: A = matrix([[1,1],[-1,1]])
@@ -31,7 +33,7 @@ How to use it
 
 	.. end of output
 
-The sage prompts can be removed by adding setting 'prompt_tag' option to False:
+The sage prompts can be removed by adding setting 'prompt_tag' option to False::
 
 	.. sagecellserver::
 	    :prompt_tag: False
