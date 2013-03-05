@@ -38,3 +38,4 @@ The sage prompts can be removed by adding setting 'prompt_tag' option to False::
 	.. sagecellserver::
 	    :prompt_tag: False
 
+Setting 'prompt_tag' to True has same effect as removing ':prompt_tag:'.
