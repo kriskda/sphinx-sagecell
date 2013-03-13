@@ -4,7 +4,7 @@ This extension defines a directive 'sagecellserver' which allows to embedd sage 
 Installation
 =========
    1. Install this extension: 'python setup.py install --user'
-   2. Move 'layout.html' to your '_template' directory. Change paths in this file inside <script> tags if necessary
+   2. Move 'layout.html' to your '_templates' directory. Change paths in this file inside <script> tags if necessary
    3. Add 'icsecontrib.sagecellserver' to your extensions in 'config.py'
 
 
