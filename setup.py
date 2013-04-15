@@ -12,7 +12,7 @@ requires = ['Sphinx>=0.6', 'setuptools']
 
 
 setup(name='icsecontrib-sagecellserver',
-      version='1.0',
+      version='1.1',
       description='Sphinx sagecellserver extension',
       author='Krzysztof Kajda',
       author_email='kajda.krzysztof@gmail.com',
