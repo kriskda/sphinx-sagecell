@@ -33,9 +33,19 @@ Example of usage::
 
 	.. end of output
 
+Options
+======
+
 The sage prompts can be removed by adding setting 'prompt_tag' option to False::
 
 	.. sagecellserver::
 	    :prompt_tag: False
 
 Setting 'prompt_tag' to True has same effect as removing ':prompt_tag:'.
+
+During latex/pdf generation sagecell code can be changed to verbatim or \textbf using 'is_verbatim' option. Default is 'True'.::
+
+	.. sagecellserver::
+	    :is_verbatim: True
+
+
