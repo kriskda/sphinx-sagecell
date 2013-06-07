@@ -24,14 +24,14 @@ def html_depart_sagecellserver_node(self, node):
 
 
 def latex_visit_sagecellserver_node(self, node):
-    if node['is_verbatim']  == "True":
+    if node["is_verbatim"]  == "True":
         self.body.append("\n\n")
         self.body.append("\\begin{verbatim}\n")
         self.body.append(node['python_code'])
         self.body.append("\n\end{verbatim}")
         self.body.append("\n\n")
     else:
-        self.body.append("\n\\textbf{***SAGE CELL INTERACT***}\n")
+        self.body.append("\n\\textbf{***SAGE CELL***}\n")
 
 
 def latex_depart_sagecellserver_node(self, node):

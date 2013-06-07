@@ -4,7 +4,7 @@ This extension defines a directive 'sagecellserver' which allows to embedd sage 
 Installation
 =========
    1. Install this extension: 'python setup.py install --user'
-   2. Move 'layout.html' to your '_templates' directory. Change paths in this file inside <script> tags if necessary
+   2. Move 'layout.html' to your '_templates' directory. Change sagecell paths if necessary
    3. Add 'icsecontrib.sagecellserver' to your extensions in 'conf.py'
 
 
@@ -43,9 +43,14 @@ The sage prompts can be removed by adding setting 'prompt_tag' option to False::
 
 Setting 'prompt_tag' to True has same effect as removing ':prompt_tag:'.
 
-During latex/pdf generation sagecell code can be changed to verbatim or \textbf using 'is_verbatim' option. Default is 'True'.::
+During latex/pdf generation sagecell code can be displayed inside '\begin{verbatim}' and '\end{verbatim}' tags or as a single \textbf '***SAGE CELL***' message. This message is a reminder of sage cell exsistence. For example later this text can be manually replaced by screenshoot of sagcell example (mostly @interact example). 
+
+This option is controlled using 'is_verbatim' option. Default is 'True'.::
 
 	.. sagecellserver::
 	    :is_verbatim: True
+
+
+
 
 
